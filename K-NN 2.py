@@ -19,7 +19,6 @@ print(y_feature)
 x_features = pd.get_dummies(x_features, columns=['Gender'])
 x_features.info()
 
-
 X_train, X_test, y_train, y_test = train_test_split(x_features, y_feature, test_size=0.2, random_state=42)
 
 print("Shape of feature (X) array:",x_features.shape)
